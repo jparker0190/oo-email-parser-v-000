@@ -7,3 +7,7 @@ class EmailParser
 #initialize method
 def initialize(email)
   @emails = email
+end
+def parse(email)
+  email.split(",").uniq
+end
